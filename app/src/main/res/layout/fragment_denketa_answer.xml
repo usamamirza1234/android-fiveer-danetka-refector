@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_dotted">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentTop="true">
+
+
+            <RelativeLayout
+                android:id="@+id/act_intro_lay_toolbar_rlBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_intro_lay_toolbar_rlCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="15dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_cancl" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:background="@drawable/shp_round_bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_question_bg"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/frg_my_results_txv_danetkaname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Danektas Name"
+                        android:textColor="@color/thm_red_app"
+                        android:textSize="@dimen/fontsize_large"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text=""
+
+                        android:justificationMode="inter_word"
+                        android:padding="5dp"
+                        android:textColor="@color/light_gray3"
+                        android:textSize="@dimen/fontsize_mini" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:id="@+id/img"
+                        android:layout_width="@dimen/question_icon_height"
+                        android:layout_height="@dimen/question_icon_height"
+
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_placeholder"  />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/frg_make_rcv_regilto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:itemCount="5"
+                            tools:listitem="@layout/lay_item_anwserregilto" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/frg_denketa_answer_llAddmy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shp_rect_rounded_app_blue"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_bold"
+                    android:lines="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="See the answer"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frg_denketa_answer_llLearnmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginStart="20dp"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shp_rect_rounded_app_blue"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_bold"
+                    android:lines="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Learn more"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/frg_denketa_answer_llEndGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginStart="20dp"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shp_rect_rounded_app_blue"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_bold"
+                    android:lines="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="End Game"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

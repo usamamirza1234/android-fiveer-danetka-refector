@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/act_intro_rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/act_lay_toolabar" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frg_presigin_rlPlay"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_bg_about"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+
+                android:background="@drawable/ic_shp_about">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/aladin_regular"
+                    android:padding="10dp"
+
+                    android:text="What is Danetkas?"
+                    android:textColor="@color/thm_orange_app"
+                    android:textSize="@dimen/fontsize_xxxxlarge"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_what_denketa">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="25dp"
+                    android:paddingEnd="10dp"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/frg_what_denketa_txvDesc"
+
+                    android:text="XYA"
+                    android:textColor="@color/thm_blue_app"
+                    android:textSize="@dimen/fontsize_small" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="25dp"
+                    android:paddingEnd="10dp"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/frg_what_denketa_txvDesc2"
+
+                    android:text="XYZ"
+                    android:textColor="@color/thm_blue_app"
+                    android:textSize="@dimen/fontsize_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/bow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-20dp"
+                android:src="@drawable/ic_what_denketa_bow" />
+
+
+            <ImageView
+
+                android:id="@+id/feet"
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/description"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-30dp"
+                android:src="@drawable/ic_what_feet" />
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/frg_presigin_rlPlay"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-40dp"
+            android:src="@drawable/ic_hat_what" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

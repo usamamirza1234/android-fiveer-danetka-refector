@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/act_intro_rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/act_lay_toolabar" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aladin_regular"
+                android:padding="10dp"
+                android:text="Payment"
+                android:textColor="@color/thm_orange_app"
+                android:textSize="@dimen/fontsize_extralarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/frg_presigin_txvPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aladin_regular"
+                android:padding="10dp"
+                android:text="@string/frg_my_account"
+                android:textColor="@color/thm_orange_app"
+                android:textSize="@dimen/fontsize_extralarge"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Card number"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shp_rect_rounded_blue_mini_stoke"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <EditText
+
+                    android:id="@+id/frg_signup_edtcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edttext_height_medium"
+                    android:background="@null"
+                    android:cursorVisible="true"
+
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/thm_blue_app"
+                    android:textColorHint="@color/thm_gray_app"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_lock"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="20dp"
+                android:text="Expiry date"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="100">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="50"
+                    android:background="@drawable/shp_rect_rounded_blue_mini_stoke"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edttext_height_medium"
+                        android:background="@null"
+                        android:cursorVisible="true"
+android:id="@+id/txvMonth"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/thm_blue_app"
+                        android:textColorHint="@color/thm_gray_app"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/fontsize_medium"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="50"
+                    android:background="@drawable/shp_rect_rounded_blue_mini_stoke"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edttext_height_medium"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:id="@+id/txvYear"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/thm_blue_app"
+                        android:textColorHint="@color/thm_gray_app"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/fontsize_medium"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="20dp"
+                android:text="CVC"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_small" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="100">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="50"
+                    android:background="@drawable/shp_rect_rounded_blue_mini_stoke"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <EditText
+                        android:id="@+id/frg_signup_edtcvc"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edttext_height_medium"
+                        android:background="@null"
+                        android:cursorVisible="true"
+
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/thm_blue_app"
+                        android:textColorHint="@color/thm_gray_app"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/fontsize_medium"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/frg_my_account_txvLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edttext_height_medium"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingStart="5dp"
+                    android:text="@string/frg_my_account_login"
+                    android:textColor="@color/thm_orange_app"
+                    android:textSize="@dimen/fontsize_small" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp">
+
+                <com.dd.ShadowLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:sl_cornerRadius="32dp"
+                    app:sl_dx="0dp"
+                    app:sl_dy="0dp"
+                    app:sl_shadowColor="@color/thm_shadow"
+                    app:sl_shadowRadius="9dp">
+
+                    <RelativeLayout
+                        android:id="@+id/frg_my_account_rlRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_large"
+
+                        android:background="@drawable/shp_rect_rounded_app_blue"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:fontFamily="@font/poppins_bold"
+
+                            android:lines="1"
+
+                            android:text="Pay Now"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fontsize_medium"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+                </com.dd.ShadowLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

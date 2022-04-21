@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/act_intro_rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/act_lay_toolabar" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+
+            android:background="@drawable/ic_shp_about">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:padding="10dp"
+
+                android:text="Dictionary"
+                android:textColor="@color/thm_orange_app"
+                android:textSize="@dimen/fontsize_extralarge"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <com.dd.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            app:sl_cornerRadius="24dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="@color/thm_shadow"
+            app:sl_shadowRadius="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_medium"
+
+                android:background="@drawable/shp_rect_rounded_white_medium">
+
+
+                <EditText
+                    android:id="@+id/edt_Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="40dp"
+                    android:layout_toEndOf="@id/imv_search"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="center_vertical"
+                    android:hint="Search"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="30dp"
+                    android:textColor="@color/thm_blue_app"
+                    android:textColorHint="@color/gray"
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:id="@+id/imv_search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:paddingEnd="14dp"
+                    android:src="@drawable/ic_search" />
+
+
+            </RelativeLayout>
+        </com.dd.ShadowLayout>
+
+        <LinearLayout
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/ic_dic"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <RelativeLayout
+                android:layout_marginTop="-5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/shp_rounded_thm_gray">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/frg_lsv_dictionary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shp_rounded_thm_gray"
+                    android:layout_marginTop="10dp"
+                    android:clipToPadding="false"
+                    android:divider="@null"
+                    android:horizontalSpacing="7dp"
+                    android:numColumns="2"
+                    android:padding="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="7dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/act_intro_rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/act_lay_toolabar" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/frg_presigin_txvPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/aladin_regular"
+                    android:padding="10dp"
+                    android:text="@string/frg_contact_app"
+                    android:textColor="@color/thm_orange_app"
+                    android:textSize="@dimen/fontsize_extralarge"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="20dp"
+
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:text="@string/frg_contact_app_ask"
+                    android:textColor="@color/black"
+
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontsize_mini"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/shp_rect_rounded_gray">
+
+                        <EditText
+                            android:id="@+id/frg_cont_edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:hint="Your Email"
+
+                            android:padding="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="10dp"
+                            android:text=""
+                            android:textColor="@color/thm_blue_app"
+                            android:textColorHint="@color/thm_gray_app"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="normal" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shp_rect_rounded_gray">
+
+                    <EditText
+                        android:id="@+id/frg_cont_edtConact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:hint="@string/frg_contact_type_here"
+                        android:lines="6"
+                        android:padding="15dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="10dp"
+                        android:text=""
+                        android:textColor="@color/thm_blue_app"
+                        android:textColorHint="@color/thm_gray_app"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/fontsize_mini"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/frg_cont_edtConact"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/ic_note"
+
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/frg_cont_llsend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shp_rect_rounded_app_blue"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:fontFamily="@font/poppins_bold"
+                            android:lines="1"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="5dp"
+
+                            android:text="Send"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fontsize_medium"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/frg_cont_llsent"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shp_rect_rounded_app_green"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+
+                        android:paddingTop="5dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="5dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:fontFamily="@font/poppins_bold"
+                            android:lines="1"
+                            android:paddingEnd="5dp"
+
+                            android:text="Sent"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fontsize_medium"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_white_tick" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="20dp"
+
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="5dp"
+
+                    android:text="@string/frg_contact_app_contact"
+                    android:textColor="@color/black"
+
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontsize_mini" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="20dp"
+
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/frg_contact_app_details"
+
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontsize_mini"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+
+                        android:src="@drawable/fb_yt" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:src="@drawable/ic_logo" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

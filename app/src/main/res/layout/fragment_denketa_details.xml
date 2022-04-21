@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:src="@android:drawable/ic_input_add" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/act_intro_rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/act_lay_toolabar" />
+
+        </RelativeLayout>
+
+        <com.dd.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:sl_cornerRadius="24dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="@color/thm_shadow"
+            app:sl_shadowRadius="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_medium"
+
+                android:background="@drawable/shp_rect_rounded_white_medium">
+
+                <EditText
+                    android:id="@+id/frg_more_dankta_edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="start|center"
+                    android:hint="Search"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:textColor="@color/thm_blue_app"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontsize_mini" />
+
+                <ImageView
+                    android:id="@+id/frg_more_dankta_imv_search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:paddingEnd="14dp"
+                    android:src="@drawable/ic_search" />
+
+
+            </RelativeLayout>
+        </com.dd.ShadowLayout>
+
+        <ListView
+            android:id="@+id/frg_rcv_my_denketa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:horizontalSpacing="7dp"
+            android:numColumns="2"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="none"
+            android:verticalSpacing="7dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

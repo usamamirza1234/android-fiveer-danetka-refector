@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/tollbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/act_intro_lay_toolbar_rlCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="15dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_cancl" />
+            </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/topest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_large"
+        android:layout_below="@id/tollbar"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:id="@+id/rules"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Rules"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_small"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gameplay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Gameplay"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_small"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/extra_rules"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:gravity="center"
+
+                android:maxLines="2"
+                android:text="Extra Rules"
+                android:textColor="@color/thm_blue_app"
+
+                android:textSize="@dimen/fontsize_xlarge"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@color/thm_blue_app" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/challenge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Challenge"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_small"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topest"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-15dp">
+
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="330dp"
+            android:src="@drawable/ic_extra_hand" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/topest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/ic_shp_gray"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="25"
+                    android:src="@drawable/ic_speaker" />
+
+                <TextView
+                    android:id="@+id/frg_extra_rules_txvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:justificationMode="inter_word"
+                    android:textAlignment="center"
+                    android:textColor="@color/thm_blue_app"
+                    android:textSize="@dimen/fontsize_mini" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/frg_extra_rules_txvDescription2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:justificationMode="inter_word"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_mini" />
+
+                <ImageView
+                    android:layout_marginStart="5dp"
+                     android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/frg_extra_rules_txvDescription2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="-20dp"
+                    android:src="@drawable/ic_master_2" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/frg_extra_rules_txvDescription3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_mini" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_shp_gray"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="25"
+                    android:src="@drawable/ic_speaker" />
+
+                <TextView
+                    android:id="@+id/frg_extra_rules_txvMessage"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="70"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/thm_blue_app"
+                    android:textSize="@dimen/fontsize_mini" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_shp_circle_blue2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_madeup" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/frg_extra_desc5"
+                    android:justificationMode="inter_word"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_mini" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <com.dd.ShadowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"    android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:sl_cornerRadius="24dp"
+        app:sl_dx="0dp"
+        app:sl_dy="0dp"
+        app:sl_shadowColor="@color/thm_shadow"
+        app:sl_shadowRadius="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_medium"
+
+            android:background="@drawable/shp_rect_rounded_white_medium">
+
+            <EditText       android:background="@null"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:id="@+id/frg_my_dankta_edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:gravity="start|center"
+                android:hint="Search"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_mini"
+                android:paddingEnd="14dp"
+                android:paddingStart="14dp" />
+
+            <ImageView
+                android:id="@+id/frg_my_dankta_imv_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:paddingEnd="14dp"
+                android:src="@drawable/ic_search" />
+
+
+        </RelativeLayout>
+    </com.dd.ShadowLayout>
+
+    <ListView
+        android:id="@+id/frg_rcv_my_denketa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:horizontalSpacing="7dp"
+        android:numColumns="2"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        android:verticalSpacing="7dp"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:src="@android:drawable/ic_input_add" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/act_intro_rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/act_lay_toolabar" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:padding="10dp"
+
+                android:text="Promo Codes \t \t"
+                android:textColor="@color/thm_orange_app"
+                android:textSize="@dimen/fontsize_xxxxlarge"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/frg_lsvPromo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:horizontalSpacing="7dp"
+            android:numColumns="2"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="none"
+            android:verticalSpacing="7dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

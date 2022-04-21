@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/act_intro_rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/act_lay_toolabar" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/frg_presigin_txvPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:padding="10dp"
+                android:text="@string/frg_faq_app"
+                android:textColor="@color/thm_orange_app"
+                android:textSize="@dimen/fontsize_extralarge"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frg_lsv_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:horizontalSpacing="7dp"
+            android:numColumns="2"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="none"
+            android:verticalSpacing="7dp"
+            android:visibility="visible" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="20dp"
+
+            android:background="@null"
+
+            android:text="Still have questions?"
+
+
+            android:textColor="@color/black"
+
+            android:textStyle="bold"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/fontsize_small" />
+
+        <TextView
+            android:id="@+id/txvContactus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:background="@null"
+
+            android:text="Contact us."
+
+
+            android:textColor="@color/thm_blue_app"
+
+            android:textStyle="bold"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/fontsize_small" />
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

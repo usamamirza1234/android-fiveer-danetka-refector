@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clickable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/act_intro_rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/act_lay_toolabar" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView              android:id="@+id/frg_presigin_txvPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aladin_regular"
+                android:padding="10dp"
+                android:text="@string/frg_my_account"
+                android:textColor="@color/thm_orange_app"
+                android:textSize="@dimen/fontsize_extralarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/frg_my_account_signup"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_xxxlarge"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <EditText
+
+                    android:id="@+id/frg_signup_edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edttext_height_medium"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="@string/frg_my_account_email_address"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/thm_blue_app"
+                    android:textColorHint="@color/thm_gray_app"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/thm_gray_app"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/frg_signup_edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edttext_height_medium"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="@string/frg_my_account_set_pass"
+                    android:inputType="textPassword"
+
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/thm_blue_app"
+                    android:textColorHint="@color/thm_gray_app"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/thm_gray_app"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/frg_signup_edtCnfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edttext_height_medium"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="@string/frg_my_account_cnfrm_pass"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/thm_blue_app"
+                    android:textColorHint="@color/thm_gray_app"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/thm_gray_app"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp">
+
+                <com.dd.ShadowLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:sl_cornerRadius="32dp"
+                    app:sl_dx="0dp"
+                    app:sl_dy="0dp"
+                    app:sl_shadowColor="@color/thm_shadow"
+                    app:sl_shadowRadius="9dp">
+
+                    <RelativeLayout
+                        android:id="@+id/frg_my_account_rlRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_large"
+
+                        android:background="@drawable/shp_rect_rounded_app_blue"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:lines="1"
+                            android:fontFamily="@font/poppins_bold"
+
+                            android:text="@string/frg_my_account_register"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fontsize_medium"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+                </com.dd.ShadowLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="120">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="30"
+                    android:background="@color/thm_gray_app" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edttext_height_medium"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="20"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:text="@string/frg_my_account_or"
+
+                    android:textColor="@color/thm_gray_app"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="30"
+                    android:background="@color/thm_gray_app" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp">
+
+                <com.dd.ShadowLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:sl_cornerRadius="32dp"
+                    app:sl_dx="0dp"
+                    app:sl_dy="0dp"
+                    app:sl_shadowColor="@color/thm_shadow"
+                    app:sl_shadowRadius="9dp">
+
+                    <LinearLayout
+                        android:id="@+id/frg_my_account_llGoogle"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_large"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shp_rect_rounded_white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_google" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:lines="1"
+                            android:padding="5dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingStart="5dp"
+                            android:text="@string/frg_my_account_signup_google"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </com.dd.ShadowLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp">
+
+                <com.dd.ShadowLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:sl_cornerRadius="32dp"
+                    app:sl_dx="0dp"
+                    app:sl_dy="0dp"
+                    app:sl_shadowColor="@color/thm_shadow"
+                    app:sl_shadowRadius="9dp">
+
+                    <LinearLayout
+                        android:id="@+id/frg_my_account_llFB"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_large"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shp_rect_rounded_white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_fb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:lines="1"
+                            android:padding="5dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:paddingStart="5dp"
+                            android:text="@string/frg_my_account_signup_fb"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </com.dd.ShadowLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="120">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edttext_height_medium"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+
+                    android:text="@string/frg_my_account_already_user"
+
+                    android:textColor="@color/thm_blue_app"
+                    android:textSize="@dimen/fontsize_small" />
+
+                <TextView
+                    android:id="@+id/frg_my_account_txvLogin"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edttext_height_medium"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingStart="5dp"
+
+                    android:text="@string/frg_my_account_login"
+
+                    android:textColor="@color/thm_orange_app"
+                    android:textSize="@dimen/fontsize_small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

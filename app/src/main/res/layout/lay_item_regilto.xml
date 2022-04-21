@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imv_mast"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_master_2" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edttext_height_medium"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/imv_mast"
+            android:background="@drawable/ic_bg_regi">
+
+
+            <TextView
+                android:id="@+id/edt_Search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="40dp"
+                android:layout_toEndOf="@id/imv_search"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:gravity="center_vertical"
+                android:hint="Type here..."
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/thm_blue_app"
+                android:textColorHint="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/fontsize_mini" />
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

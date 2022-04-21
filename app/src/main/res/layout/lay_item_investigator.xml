@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:id="@+id/lay_item_my_denekta_txvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Name"
+                android:textStyle="bold"
+                android:fontFamily="@font/aladin_regular"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_small" />
+
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/lay_item_my_denekta_imvResults"
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/lay_item_my_denekta_txvName"
+                android:paddingStart="10dp"
+                android:src="@drawable/ic_report" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imvDanetka"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingEnd="15dp"
+                android:src="@drawable/ic_placeholder" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

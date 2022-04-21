@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/act_intro_rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/act_lay_toolabar" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:padding="10dp"
+                android:text="My Account"
+                android:textColor="@color/thm_orange_app"
+                android:textSize="@dimen/fontsize_extralarge"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DOIRLU"
+            android:textColor="@color/thm_blue_app"
+            android:textSize="@dimen/fontsize_xxlarge"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_line_tiny" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/txvEditProfile"
+            android:layout_marginTop="20dp"
+
+            android:background="@null"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:padding="5dp"
+            android:text="Edit my profile"
+            android:textColor="@color/thm_blue_app"
+            android:textColorHint="@color/thm_blue_app"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/fontsize_small"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="Danetkas unlocked"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_small" />
+
+                <TextView
+                    android:id="@+id/txvDanetkaUnclocked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="end"
+                    android:justificationMode="inter_word"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="Danetkas locked"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_small" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="end"
+                    android:id="@+id/txvDanetkalocked"
+                    android:justificationMode="inter_word"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="Danetkas played"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_small" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="end"
+                    android:id="@+id/txvDanetkaPlayed"
+                    android:justificationMode="inter_word"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="Credits available"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_small" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="end"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/txvDanetkaAvailable"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/txvGetMore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="Get more credits"
+                    android:textColor="@color/thm_blue_app"
+                    android:textSize="@dimen/fontsize_small"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+        </RelativeLayout>
+
+        <com.dd.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            app:sl_cornerRadius="32dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="@color/thm_shadow"
+            app:sl_shadowRadius="9dp">
+
+            <LinearLayout
+                android:id="@+id/frg_restPass_llConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_large"
+                android:layout_gravity="center"
+                android:background="@drawable/shp_rect_rounded_app_blue"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_bold"
+                    android:lines="1"
+                    android:text="Invite friends"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_medium"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+        </com.dd.ShadowLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

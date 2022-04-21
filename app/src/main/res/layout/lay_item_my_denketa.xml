@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:id="@+id/lay_item_my_denekta_txvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aladin_regular"
+                android:gravity="center"
+                android:text="1. Name"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_small"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/lay_item_my_denekta_imvResults"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/lay_item_my_denekta_txvName"
+                android:paddingStart="10dp"
+                android:src="@drawable/ic_report" />
+
+            <ImageView
+                android:id="@+id/lay_item_my_denekta_imvDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/lay_item_my_denekta_imvResults"
+                android:paddingStart="10dp"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imvDanetka"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:paddingEnd="10dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/ic_placeholder" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imvDanetka1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:paddingEnd="10dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/ic_placeholder" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

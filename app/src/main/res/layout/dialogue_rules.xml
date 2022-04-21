@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/popup_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/popup_dark">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/aladin_regular"
+                android:gravity="center"
+
+                android:text="Rules"
+                android:textColor="@color/thm_blue_app"
+                android:textSize="@dimen/fontsize_extralarge"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/aladin_regular"
+
+                android:gravity="center"
+                android:text="Master"
+                android:textColor="@color/thm_red_app"
+                android:textSize="@dimen/fontsize_xxlarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:text="@string/rules_master"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fontsize_tiny"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/aladin_regular"
+                android:gravity="center"
+
+                android:text="Investigator"
+                android:textColor="@color/thm_red_app"
+                android:textSize="@dimen/fontsize_xxlarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+
+                android:text="@string/rules_investigators"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fontsize_tiny"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+
+                        android:text="for more information check our "
+                        android:textColor="@color/white_1"
+                        android:textSize="@dimen/fontsize_tiny"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/lay_item_play_txvRules"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/aladin_regular"
+
+                        android:text=" RULES."
+                        android:textColor="@color/thm_blue_app"
+                        android:textSize="@dimen/fontsize_tiny"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+
+                        android:text="Don't show this again   "
+                        android:textColor="@color/white_1"
+                        android:textSize="@dimen/fontsize_tiny"
+                        android:textStyle="bold" />
+
+
+                    <CheckBox
+                        android:id="@+id/lay_prog_chb"
+                        android:layout_width="@dimen/btmtabbar_icon_size"
+                        android:layout_height="@dimen/btmtabbar_icon_size"
+
+                        android:background="@drawable/slc_chb_tick"
+                        android:button="@null"
+                        android:checked="true"
+                        android:clickable="true" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.dd.ShadowLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:sl_cornerRadius="32dp"
+                app:sl_dx="0dp"
+                app:sl_dy="0dp"
+                app:sl_shadowColor="@color/thm_shadow"
+                app:sl_shadowRadius="9dp">
+
+                <LinearLayout
+                    android:id="@+id/lay_item_rules_llOkay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shp_rect_rounded_app_blue"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_bold"
+
+
+                        android:lines="1"
+                        android:text="OK"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fontsize_medium"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </com.dd.ShadowLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_admin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_intro_rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/act_lay_toolabar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/frg_admin_rlPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/aladin_regular"
+                    android:padding="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="\t\t\tPromoCodes\t\t\t"
+                    android:textColor="@color/thm_orange_app"
+                    android:textSize="@dimen/fontsize_extralarge"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_admin_rlDenketaDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+
+                android:layout_marginEnd="20dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/aladin_regular"
+                    android:lines="1"
+                    android:padding="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="\t\t\tDanetka details\t\t\t"
+                    android:textColor="@color/thm_orange_app"
+                    android:textSize="@dimen/fontsize_extralarge"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/fg_signup_complete_txvSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edttext_height_medium"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+
+                android:background="@null"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingStart="5dp"
+
+                android:text="SIGN OUT ADMIN"
+                android:textColor="@color/thm_red_app"
+                android:textSize="@dimen/fontsize_small"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

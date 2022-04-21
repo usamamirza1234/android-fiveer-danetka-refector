@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_popup_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_dark">
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/dailog_txvDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:justificationMode="inter_word"
+            android:src="@drawable/ic_master_popup"
+            android:text=""
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dailog_txvDetails"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="90">
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+
+                <TextView
+                    android:id="@+id/txv_dialoge_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/shp_circle_blue"
+                    android:padding="7dp"
+                    android:text="YES"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_large"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+
+                <TextView
+                    android:id="@+id/txv_dialoge_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shp_circle_red"
+
+                    android:padding="7dp"
+                    android:text="NO"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_large"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
